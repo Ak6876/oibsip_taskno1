@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Calculator</title>
+</head>
+<body>
+    <h2 class="heading">Calculator</h2>
+    <div class="calc-window">
+        <section class="screen">
+        </section>
+        <section class="calc-button">
+        <div class="calc-button-row">
+            <button class="calc-btn double" onclick="handleClick('clear')">clear</button>
+            <button class="calc-btn" onclick="handleClick('←')">←</button>
+            <button class="calc-btn" onclick="handleClick('/')">/</button>
+        </div>
+        <div class="calc-button-row">
+                <button class="calc-btn" onclick="handleClick('7')">7</button>
+                <button class="calc-btn" onclick="handleClick('8')">8</button>
+                <button class="calc-btn" onclick="handleClick('9')">9</button>
+                <button class="calc-btn" onclick="handleClick('x')">&times;</button>
+                
+            </div>
+        <div class="calc-button-row">
+            <button class="calc-btn" onclick="handleClick('4')">4</button>
+            <button class="calc-btn" onclick="handleClick('5')">5</button>
+            <button class="calc-btn" onclick="handleClick('6')">6</button>
+            <button class="calc-btn" onclick="handleClick('-')">&minus;</button>
+        </div>
+        <div class="calc-button-row">
+            <button class="calc-btn" onclick="handleClick('1')">1</button>
+            <button class="calc-btn" onclick="handleClick('2')">2</button>
+            <button class="calc-btn" onclick="handleClick('3')">3</button>
+            <button class="calc-btn" onclick="handleClick('+')">&plus;</button>
+        </div>
+        <div class="calc-button-row">
+            <button class="calc-btn " onclick="handleClick('.')">.</button>             
+            <button class="calc-btn double" onclick="handleClick('0')">0</button>
+            <button class="calc-btn" onclick="handleClick('=')">&equals;</button>
+        </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        Made by Akshith P
+    </footer>
+</body>
+</html>

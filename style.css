@@ -1,0 +1,105 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background:linear-gradient(320deg,#5175A7, #023f70,#051727);
+    display: flex;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-display: swap;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.heading{
+    margin: 20px;
+    font-size: 30px;
+    color:aliceblue;
+}
+.calc-window{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255,0.3);
+    border:1px solid rgba(255, 255, 255, 0.01) ;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 2vw 4vw;
+}
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #96AFCD;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius:20px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    margin-top: 2px;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 346px
+}
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.calc-btn{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #96AFCD;
+    border:1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family:inherit;
+    font-size:20px;
+    font-weight: inherit;
+    height: 60px;  
+}
+.calc-btn:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border:1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    background:#96AFCD;
+}
+.calc-btn:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+.calc-btn:hover{
+    background-color: inherit;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    color:aliceblue;
+}
+.calc-btn:active{
+    background-color: darkslateblue;
+} 
+.double{
+    flex-basis:45%;
+}
